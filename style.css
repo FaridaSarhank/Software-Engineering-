@@ -1,0 +1,487 @@
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #81d8d0, #00796b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #00796b;
+}
+
+
+/* Login and Create Account Container */
+.login-container {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: left;
+}
+
+
+.login-container h2 {
+  color: #00796b;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+
+/* Background Images */
+.image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+
+.image, .background-image {
+  position: absolute;
+  width: 400px;
+  height: 450px;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+
+input {
+  width: 80%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: border 0.3s ease;
+}
+
+
+input:focus {
+  border-color: #00796b;
+  outline: none;
+}
+
+
+/* Buttons */
+button {
+  background-color: #00796b;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+button:hover {
+  background-color: #004d40;
+  transform: scale(1.05);
+}
+
+
+/* Error Messages */
+#error-message, #account-error-message, #password-error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+  display: none;
+}
+
+
+/* Plant Selection Container */
+.plant-selection-container {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+}
+
+
+.plant-selection-container h2 {
+  color: #00796b;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+
+/* Dropdown and Custom Plant Input */
+#plant-select, #custom-plant {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-top: 10px;
+  transition: border 0.3s ease;
+}
+
+
+#plant-select:focus, #custom-plant:focus {
+  border-color: #00796b;
+  outline: none;
+}
+
+
+/* Confirm Button */
+.plant-selection-container button {
+  background-color: #00796b;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 15px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+.plant-selection-container button:hover {
+  background-color: #004d40;
+  transform: scale(1.05);
+}
+
+
+/* Selected Plant Display */
+#selected-plant {
+  color: #00796b;
+  font-size: 18px;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+
+/* Dashboard Container */
+.dashboard-container {
+  text-align: center;
+}
+
+
+.dashboard-container h1 {
+  font-size: 2.5em;
+  color: #fff;
+}
+
+
+/* Plant Containers */
+.plant-containers {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+
+.plant-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  text-align: left;
+}
+
+
+/* Feature Bar */
+.feature-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #00796b;
+  padding: 10px 0;
+}
+
+
+.feature-bar button {
+  background-color: #fff;
+  color: #00796b;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+.feature-bar button:hover {
+  background-color: #004d40;
+  transform: scale(1.05);
+}
+
+
+/* Register Plant Button */
+.register-plant-btn {
+  font-size: 2em;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 50%;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+.register-plant-btn:hover {
+  background-color: #004d40;
+  transform: scale(1.1);
+}
+
+
+/* Plant Status Container Adjustments */
+.plant-status-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+
+.plant-status {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  width: 50%;
+  text-align: left;
+}
+
+
+.top-right-menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+
+/* Bluetooth Button Styling */
+.bluetooth-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+.bluetooth-dropdown {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+
+.bluetooth-dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+}
+
+
+.bluetooth-dropdown li {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+
+.bluetooth-dropdown li:hover {
+  background-color: #f0f0f0;
+}
+
+
+/* Plant Status Container Adjustments */
+.plant-status-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.plant-status-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  width: 30%;
+  text-align: left;
+}
+
+
+.plant-status-card h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+
+/* Labels for plant status details */
+.plant-status-card .label {
+  font-weight: bold;
+  color: #00796b;
+  font-size: 16px;
+}
+
+
+.plant-status-card .data {
+  font-weight: normal;
+  color: #555;
+  display: block;
+  margin-top: 5px;
+}
+
+
+.plant-status-card .status {
+  font-weight: bold;
+  font-size: 16px;
+  color: #ff6347; /* Red for Unhealthy by default */
+}
+
+
+.plant-status-card .healthy {
+  color: #4CAF50; /* Green for Healthy */
+}
+
+
+.plant-status-card .next-watering,
+.plant-status-card .satisfaction {
+  font-size: 14px;
+  color: #777;
+  margin-top: 5px;
+}
+
+
+.plant-status-card p {
+  margin: 10px 0;
+}
+
+
+/* Plant Status with specific colors */
+.plant-status-card .unhealthy {
+  color: #ff6347; /* Red for Unhealthy */
+}
+
+
+.plant-status-card .healthy {
+  color: #4CAF50; /* Green for Healthy */
+}
+
+
+.plant-status-card .satisfaction {
+  color: #00796b;
+  font-weight: bold;
+}
+.history-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.history-item {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.history-item:hover {
+  transform: scale(1.02);
+}
+
+#back-to-settings-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+/* Styling for plant list and remove button */
+.plant-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plant-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.plant-list li h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #00796b;
+}
+
+.remove-btn {
+  background-color: #ff4c4c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.remove-btn:hover {
+  background-color: #ff0000;
+}
+
+#back-to-dashboard-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#back-to-dashboard-btn:hover {
+  background-color: #45A049;
+}

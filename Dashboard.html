@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Monitor - Dashboard</title>
+  <link rel="stylesheet" href="dashboard-style.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <h1>Welcome, <span id="user-name"></span>!</h1>
+   
+    <div class="plant-containers">
+      <!-- Dynamic plant containers will be inserted here -->
+    </div>
+   
+    <button id="register-plant-btn" class="register-plant-btn">+</button>
+   
+    <div class="feature-bar">
+      <button id="plant-facts-btn">Plant Facts</button>
+      <button id="home-btn">Home</button>
+      <button id="settings-btn">Settings</button>
+      <li><button id="history-btn">History</button></li>
+      <button id="remove-plant-btn" style="margin-top: 10px;">Remove a Plant</button>
+      <button class="details-btn" data-plant="${plant}">More Details</button>
+
+
+      
+
+    </div>
+  </div>
+ 
+  <script src="dashboard.js"></script>
+</body>
+</html>

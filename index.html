@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Monitor - Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login to Plant Monitor</h2>
+<!-- Image Container for Background Images Around the Login Container -->
+<div class="image-container" id="image-container"></div>
+
+
+
+
+    <!-- Login Form -->
+    <form id="login-form">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      </div>
+      <button type="submit" id="login-btn">Login</button>
+      <p id="error-message"></p>
+    </form>
+
+
+
+
+    <!-- Create Account Button -->
+    <p>Don't have an account? <button id="create-one-btn">Create one</button></p>
+  </div>
+ 
+
+
+  <script src="app.js"></script>
+</body>
+</html>
